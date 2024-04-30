@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/fonts.css">
+</head>
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+    <div class="conteudo">
+        <div class="conteudoAdicionar">
+            <input type="text" id="textoNova" placeholder="Digite sua Nova Tarefa">
+            <button id="botaoNova" onclick="adicionarTarefa()" title="Clique para Adicionar essa Tarefa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                  </svg>
+            </button>
+        </div>
+        <div class="conteudoListado">
+            <span class="subtitulo">Hoje</span>
+            <ul id="tarefasListadas">
+            </ul>
+        </div>
+        <div class="conteiner">
+            <span class="desenvolvedor"><strong>Minha Lista de Tarefas V0.1</strong> por <a class="linkExterno" href="https://www.linkedin.com/in/brunolombardidev/" target="_blank" alt="Perfil do linkedin">
+              <strong>BrunoLombardi</strong></span>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="./src/script.js"></script>
+</html>
