@@ -1,0 +1,216 @@
+:root {
+    --color-white1t: rgb(255, 255, 255, 0.5);
+    --color-white1: rgb(255, 255, 255);
+    --color-grey1: rgb(235, 235, 235);
+    --color-grey2: rgb(215, 215, 215);
+    --color-grey3: rgb(175, 175, 175);
+    --color-black1t: rgb(0, 0, 0, 0.3);
+    --color-black1: rgb(0, 0, 0);
+    --color-green1: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red1: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+    --color-yellow1: rgb(255, 233, 134);
+    --color-yellow2: rgb(252, 221, 83);
+    --color-yellow3: rgb(255, 187, 0);
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+    background-color: var(--color-grey2);
+    color: var(--color-black1);
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Barra de Rolagem */
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--color-grey3);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-grey1);
+    border: 1px solid var(--color-grey3);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-grey1);
+  }
+  
+  ::-webkit-scrollbar-button {
+    background: var(--color-grey1);
+    border: 1px solid var(--color-grey3);
+  }
+
+/* Textos */
+
+h1 {
+    margin: 10px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: var(--color-black1t);
+    font-size: 16px;
+}
+
+.versao {
+    font-size: 12px;
+    color: var(--color-grey3);
+  }
+
+/* Links */
+
+a {
+  font-weight: bold;
+  color: var(--color-grey3);
+}
+
+a.linkExterno:link,
+:visited {
+  color: var(--color-grey3);
+  text-decoration-line: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+a.linkExterno:hover {
+  color: var(--color-black1);
+  text-decoration: underline;
+}
+
+/* Estrutura */
+
+.container {
+    max-width: 600px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.desenvolvedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Campos */
+
+.input-row input[type="text"],
+.input-row select {
+    flex: 1;
+    padding: 5px 10px;
+    max-width: 300px;
+    min-width: 80px;
+    border-radius: 25px;
+    border: 0px;
+    background-color: var(--color-grey1);
+}
+
+input::placeholder {
+    color: var(--color-grey3);
+}
+
+.input-row input[type="text"] {
+    margin: 6px auto;
+    height: 25px;
+}
+
+.input-row select {
+    margin: 6px auto;
+    padding: 5px 10px;
+    height: 35px;
+    color: var(--color-grey3);
+}
+
+/* Botões */
+
+.input-row button {
+    margin: 6px auto;
+    padding: 5px 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-grey3);
+    color: var(--color-grey1);
+    border: none;
+    cursor: pointer;
+}
+
+.task button {
+    margin: 0px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-green1);
+    color: var(--color-white1);
+    border: none;
+    cursor: pointer;
+}
+
+/*  */
+
+.project {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: var(--color-yellow1);
+    max-width: 95%;
+    box-shadow: 0 0px 10px var(--color-black1t);
+    text-align: center;
+    position: relative;
+}
+
+.delete-project {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-black1);
+    cursor: pointer;
+}
+
+.task {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid var(--color-white1t);
+    padding: 10px;
+}
+
+.task span {
+    flex: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.completed {
+    color: var(--color-grey2);
+    text-decoration: line-through;
+}
+
+.task.priority-common {
+    background-color: transparent;
+    border: 1px solid var(--color-white1);
+}
