@@ -1,3 +1,5 @@
+@import url(../assets/fonts/Lato/lato.css);
+
 :root {
     --color-white1t: rgb(255, 255, 255, 0.5);
     --color-white1: rgb(255, 255, 255);
@@ -20,7 +22,7 @@ body {
     padding: 0px;
     background-color: var(--color-grey2);
     color: var(--color-black1);
-    font-family: 'Calibri', sans-serif;
+    font-family: 'lato';
 }
 
 /* Barra de Rolagem */
@@ -61,31 +63,6 @@ h1 {
     font-size: 16px;
 }
 
-.versao {
-    font-size: 12px;
-    color: var(--color-grey3);
-  }
-
-/* Links */
-
-a {
-  font-weight: bold;
-  color: var(--color-grey3);
-}
-
-a.linkExterno:link,
-:visited {
-  color: var(--color-grey3);
-  text-decoration-line: none;
-  text-align: center;
-  transition: 0.5s;
-}
-
-a.linkExterno:hover {
-  color: var(--color-black1);
-  text-decoration: underline;
-}
-
 /* Estrutura */
 
 .container {
@@ -100,14 +77,6 @@ a.linkExterno:hover {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
-    gap: 5px;
-}
-
-.desenvolvedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 5px;
 }
 
@@ -166,7 +135,7 @@ input::placeholder {
     cursor: pointer;
 }
 
-/*  */
+/* Projetos */
 
 .project {
     margin-bottom: 15px;
@@ -214,3 +183,37 @@ input::placeholder {
     background-color: transparent;
     border: 1px solid var(--color-white1);
 }
+
+/* Desenvolvedor */
+
+.desenvolvedor {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.versao {
+    font-size: 12px;
+    color: var(--color-grey3);
+}
+
+a.linkExterno {
+    font-weight: bold;
+    color: var(--color-grey3);
+  }
+  
+  a.linkExterno:link,
+  :visited {
+    color: var(--color-grey3);
+    text-decoration-line: none;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  a.linkExterno:hover {
+    color: var(--color-black1);
+    text-decoration: underline;
+  }
