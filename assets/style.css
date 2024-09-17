@@ -25,7 +25,7 @@ body {
     font-family: 'lato';
 }
 
-/* Barra de Rolagem */
+/* ////// BARRA DE ROLAGEM ////// */
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -49,7 +49,7 @@ body {
     border: 1px solid var(--color-grey3);
   }
 
-/* Textos */
+/* ////// TEXTOS ////// */
 
 h1 {
     margin: 10px;
@@ -63,7 +63,7 @@ h1 {
     font-size: 16px;
 }
 
-/* Estrutura */
+/* ////// ESTRUTURA ////// */
 
 .container {
     max-width: 600px;
@@ -80,7 +80,7 @@ h1 {
     gap: 5px;
 }
 
-/* Campos */
+/* ////// CAMPOS ////// */
 
 .input-row input[type="text"],
 .input-row select {
@@ -109,7 +109,7 @@ input::placeholder {
     color: var(--color-grey3);
 }
 
-/* Botões */
+/* ////// Botões ////// */
 
 .input-row button {
     margin: 6px auto;
@@ -125,17 +125,42 @@ input::placeholder {
 
 .task button {
     margin: 0px;
-    padding: 5px;
-    width: 35px;
-    height: 35px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-color: var(--color-green1);
-    color: var(--color-white1);
+    background-color: var(--color-grey3);
+    color: var(--color-yellow1);
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.task button:hover {
+    background-color: var(--color-black1);
+    color: var(--color-white1);
+}
+
+/* Botão Editar */
+
+.edit-task {
+    color: var(--color-grey3);
+    transition: color 0.3s;
+    margin-left: 10px;
     cursor: pointer;
 }
 
-/* Projetos */
+.edit-task:hover {
+    color: var(--color-black1);
+}
+
+/* Botão Fechar */
+
+.botaoFechar {
+    color: var(--color-grey3);
+}
+
+/* ////// PROJETOS ////// */
 
 .project {
     margin-bottom: 15px;
@@ -184,7 +209,7 @@ input::placeholder {
     border: 1px solid var(--color-white1);
 }
 
-/* Desenvolvedor */
+/* ////// DESENVOLVEDOR ////// */
 
 .desenvolvedor {
     margin: 15px;
@@ -201,19 +226,11 @@ input::placeholder {
 }
 
 a.linkExterno {
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--color-grey3);
-  }
-  
-  a.linkExterno:link,
-  :visited {
-    color: var(--color-grey3);
-    text-decoration-line: none;
-    text-align: center;
     transition: 0.5s;
-  }
-  
-  a.linkExterno:hover {
+}
+
+a.linkExterno:hover {
     color: var(--color-black1);
-    text-decoration: underline;
-  }
+}

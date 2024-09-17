@@ -18,30 +18,47 @@
       content="https://brunolombardidev.github.io/lista-de-tarefas/assets/img/thumbnail-1200x630px.png">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Lista de Tarefas</h1>
-        <div class="input-row">
-                <input type="text" id="projectInput" placeholder="Grupo de Tarefas">
-                <input type="text" id="taskInput" placeholder="Sua Tarefa">
-                <select id="priorityInput">
-                    <option value="Comum">Comum</option>
-                    <option value="Importante">Importante</option>
-                    <option value="Urgente">Urgente</option>
-                </select>
-                <button onclick="addTask()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-                    </svg>
-                </button>
-        </div>
-        <div id="projects"></div>
+
+  <div class="container">
+
+    <h1>Lista de Tarefas</h1>
+
+    <div class="input-row">
+
+      <input type="text" id="projectInput" placeholder="Grupo de Tarefas">
+
+      <input type="text" id="taskInput" placeholder="Sua Tarefa">
+
+      <select id="priorityInput">
+        <option value="Comum">Comum</option>
+        <option value="Importante">Importante</option>
+        <option value="Urgente">Urgente</option>
+      </select>
+
+      <button onclick="addTask()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+        </svg>
+      </button>
+
     </div>
-    <div class="desenvolvedor">
-        <span class="versao"><strong>Lista de Tarefas V0.2</strong> por <a class="linkExterno" href="https://www.linkedin.com/in/brunolombardidev/" target="_blank" alt="Perfil do linkedin">
-          <strong>BrunoLombardi</strong></span>
-        </a>
-    </div>
-    <script src="./assets/script.js"></script>
+
+    <div id="projects"></div>
+
+  </div>
+
+  <div class="desenvolvedor">
+
+    <span class="versao">
+      <strong>Lista de Tarefas V0.3</strong> por <a class="linkExterno" href="https://www.linkedin.com/in/brunolombardidev/" target="_blank" alt="Perfil do linkedin"><strong>BrunoLombardi</strong></a>
+    </span>
+
+  </div>
+
+  <script src="./assets/script.js"></script>
+
 </body>
+
 </html>
